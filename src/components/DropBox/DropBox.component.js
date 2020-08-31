@@ -1,17 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-
-const OuterBox = styled.div`
-    height: 100%;
-    width: 100%;
-    grid-area: drop-box;
-    border: 2px solid lightgray;
-    border-radius: 10px;
-`
+import {BoxTitle, OuterBox} from "../Primitives/SectionBox";
 
 const DropBox = props => {
+    const themeColor = 'darkseagreen';
     return (
-        <OuterBox />
+        <OuterBox gridArea='drop-box' color={themeColor}>
+            <BoxTitle color={themeColor}>Upload</BoxTitle>
+        </OuterBox>
     )
 }
 

@@ -1,20 +1,11 @@
 import React from "react";
-import styled from "styled-components";
-
-const OuterBox = styled.div`
-    height: 100%;
-    width: 100%;
-    grid-area: favorite;
-    display: flex;
-    flex-direction: row;
-    overflow-y: scroll;
-    border: 2px solid royalblue;
-    border-radius: 10px;
-`
+import {BoxTitle, OuterBox} from "../Primitives/SectionBox";
 
 const Favorite = props => {
+    const themeColor = 'royalblue';
     return (
-        <OuterBox>
+        <OuterBox gridArea='favorite' color={themeColor}>
+            <BoxTitle color={themeColor}>Favorite</BoxTitle>
             {[]}
         </OuterBox>
     )

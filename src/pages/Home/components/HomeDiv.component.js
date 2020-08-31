@@ -13,6 +13,7 @@ const InnerBox = styled.div`
     "sidebar recent drop-box"
     "sidebar favorite favorite";
 `
+
 const OuterBox = styled.div`
     height: 96vh;
     width: 90vw;
